@@ -1,0 +1,15 @@
+CREATE TABLE fisiere(
+	id int(12) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    titlu varchar(256) NOT null,
+    universitate varchar(256) not null,
+    specializare varchar(256) not null,
+    descarcari varchar(256) not null,
+    tags varchar(256) not null,
+    data date not null
+);
+
+insert into fisiere (titlu,universitate,specializare,descarcari,tags,data) VALUES ("Mate 2018-2019","UAIC","Mate-info",0,"uaic mate 2018 2019 info",CURDATE());
+
+UPDATE fisiere
+   SET descarcari = descarcari + 1 
+ WHERE id = '2';
